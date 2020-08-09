@@ -1,0 +1,173 @@
+I"�<h2 id="two-goals-for-calculus">Two goals for Calculus:</h2>
+<ol>
+  <li>Find the tangent to a curve at a point</li>
+  <li>Find the area under a curve between two points</li>
+</ol>
+
+<p class="image-center"><img src="/assets/img/1.jpg#inline3" alt="" />
+<img src="/assets/img/2.jpg#inline3" alt="" /></p>
+
+<h2 id="tangent-problem">Tangent Problem:</h2>
+
+<p><img src="/assets/img/3.jpg" alt="" class="mr" /></p>
+
+<p>$PQ$ is a <em>Secant Line</em></p>
+
+<ul>
+  <li>You need 2 points for a line.</li>
+  <li>As $Q$ approaches P, the secant move closely approximates a tangent</li>
+</ul>
+
+<p>Note: Can’t let $Q = P$</p>
+
+<p>* If we let $Q$ get “really close” to $P$, the secant will be identical to the tangent</p>
+
+<p>The idea of “really close” is <strong>limit</strong>.</p>
+
+<p class="clearfix"></p>
+
+<p><img src="/assets/img/4.jpg" alt="" class="mr" /></p>
+
+<p>Find equation of tangent line to $y=x^2$ @ $(1, 1)$</p>
+
+<p>Equation for tangent: $y-y_1=m_{tan}(x-x_1)$</p>
+
+<p>$m_{sec}=\frac{x^2-1}{x-1}=\frac{(x+1)(x-1)}{x-1} \Longrightarrow m_{sec}=x+1$</p>
+
+<ol>
+  <li>As $Q \longrightarrow P, m_{sec} \longrightarrow m_{tan}$</li>
+  <li>$x \ne 1$ (this is why $Q \ne P$)</li>
+</ol>
+
+<p>What happens to $m_{sec}$ as $x \longrightarrow 1$?
+$m_{sec} \longrightarrow 2 \Longrightarrow m_{tan}=2$</p>
+
+<p>$y-1 = 2(x-1) \newline
+y=2x-1$ (tangent equation for $x^2$ at a point $(1,1)$)</p>
+
+<p class="clearfix"></p>
+
+<h2 id="limits">Limits</h2>
+<p>What Does the function do as the variable approaches a given value?</p>
+
+<p>EXAMPLE<br />
+$f(x)=x^2$ what happens as $x \longrightarrow 2$?</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">x</th>
+      <th style="text-align: center">1.5</th>
+      <th style="text-align: center">1.9</th>
+      <th style="text-align: center">1.999</th>
+      <th style="text-align: center">2</th>
+      <th style="text-align: center">2.001</th>
+      <th style="text-align: center">2.1</th>
+      <th style="text-align: center">2.5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">f(x)</td>
+      <td style="text-align: center">2.25</td>
+      <td style="text-align: center">3.61</td>
+      <td style="text-align: center">3.961</td>
+      <td style="text-align: center">/</td>
+      <td style="text-align: center">4.004</td>
+      <td style="text-align: center">4.41</td>
+      <td style="text-align: center">6.25</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The function must approach the same # from left and right for limit to exist.</p>
+
+<p>\[lim_{x \to 2} x^2 = 4\]</p>
+
+<p>In General:</p>
+
+<p>\[lim_{x \to c} f(x)= L\]</p>
+
+<p>EXAMPLE<br />
+$lim_{x \to 1} \frac{x-1}{x^2-1} = 0.5$</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">x</th>
+      <th style="text-align: center">0.5</th>
+      <th style="text-align: center">0.99</th>
+      <th style="text-align: center">0.999</th>
+      <th style="text-align: center">1</th>
+      <th style="text-align: center">1.001</th>
+      <th style="text-align: center">1.01</th>
+      <th style="text-align: center">1.5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">f(x)</td>
+      <td style="text-align: center">0.67</td>
+      <td style="text-align: center">0.503</td>
+      <td style="text-align: center">0.5002</td>
+      <td style="text-align: center">/</td>
+      <td style="text-align: center">0.499</td>
+      <td style="text-align: center">0.497</td>
+      <td style="text-align: center">0.4</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="one-sided-limits">One-sided limits</h2>
+<p><img src="/assets/img/5.jpg" alt="" class="mr" /></p>
+
+<p>$lim_{x \to 2} f(x) = $ ?</p>
+
+<p>Right-sided: $lim_{x \to a^+} f(x)$</p>
+
+<p>$lim_{x \to 2^+} f(x)=1$</p>
+
+<p>Left-sided: $lim_{x \to a^-} f(x)$</p>
+
+<p>$lim_{x \to 2^-} f(x)=-1$</p>
+
+<p>Note: For a limit to exist at ‘a’ $lim_{x \to a} f(x)=L$ you must have:
+\[lim_{x \to a^-} f(x)=lim_{x \to a^+} f(x)\]</p>
+
+<p class="clearfix"></p>
+
+<p>EXAMPLE<br />
+Find limit of $f(x)=\frac{1}{x}$ as $x \rightarrow 0$</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">x</th>
+      <th style="text-align: center">-0.5</th>
+      <th style="text-align: center">-0.1</th>
+      <th style="text-align: center">-0.001</th>
+      <th style="text-align: center">0</th>
+      <th style="text-align: center">0.001</th>
+      <th style="text-align: center">0.01</th>
+      <th style="text-align: center">0.5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">f(x)</td>
+      <td style="text-align: center">-2</td>
+      <td style="text-align: center">-100</td>
+      <td style="text-align: center">-1000</td>
+      <td style="text-align: center">/</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">100</td>
+      <td style="text-align: center">2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>\[lim_{x \to 0^-} \frac{1}{x} = -\infty \quad\quad\quad 
+lim_{x \to 0^+} \frac{1}{x} = +\infty\]</p>
+
+<p>* If $lim_{x \to a^\pm} f(x) = \pm\infty$</p>
+:ET

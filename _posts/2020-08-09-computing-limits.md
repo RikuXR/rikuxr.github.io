@@ -64,3 +64,43 @@ $lim_{x \to -2} f(x)=D.N.E \quad\quad lim_{x \to 3} x^2-5 = 4$
 
 <p class="clearfix"></p>
 
+## Limits of trig. functions
+\* $sin(x)$ & $cos(x)$ are continuous everywhere
+
+$lim_{x \to a} sin(x) = sin(a) \quad\quad lim_{x \to a} cos(x) = cos(a)$
+
+### What about $tan(x)$?
+
+$lim_{x \to a} tan(x) = lim_{x \to a} \frac{sin(x)}{cos(x)} = \frac{lim_{x \to a} sin(x)}{lim_{x \to a} cos(x)} = \frac{sin(a)}{cos(a)} = tan(a), \quad cos(a) \neq 0 \rightarrow x \neq \pm\frac{\pi}{2} + \pi n$
+
+### Example
+$lim_{x \to 1} cos(\frac{x^2-1}{x-1}) = cos[lim_{x \to 1} \frac{x^2-1}{x-1}] = 
+cos[lim_{x \to 1} (x+1)] = cos(2)$
+
+### Example
+$lim_{x \to \frac{\pi}{2}} [3x^2 + cos(x)] = 3(\frac{\pi}{2})^2 + cos(\frac{\pi}{2}) = \frac{3\pi^2}{4}$
+
+### Example
+![](/assets/img/2.5.jpg){:class="mr"}
+$lim_{x \to 0} [\frac{sin(x)}{x}] = ?$
+
+AREAS:
+
+$\begin{rcases}
+   &\text{Big} \triangle = \dfrac{1 * tan(x)}{2} \cr[1em]
+   &\text{Sector}  = \dfrac{1 * x}{2} \cr[1em]
+   &\text{Small} \triangle = \dfrac{1 * sin(x)}{2}
+\end{rcases} \Rightarrow \dfrac{sin(x)}{2} < \dfrac{x}{2} < \dfrac{tan(x)}{2}$
+
+<p class="clearfix"></p>
+
+### Using squeeze theorem
+\\[ \dfrac{sin(x)}{sin(x)} < \dfrac{x}{sin(x)} < \dfrac{tan(x)}{sin(x)} \\]
+\\[ 1 < \dfrac{x}{sin(x)} < \dfrac{tan(x)}{sin(x)} \\]
+\\[ 1 < \dfrac{x}{sin(x)} < \dfrac{1}{cos(x)} \\]
+\\[ 1 > \dfrac{sin(x)}{x} > cos(x) \\]
+
+\\[\begin{rcases}
+   lim_{x \to 0} 1 = 1 \cr[1em]
+   lim_{x \to 0} cos(x) = 1
+\end{rcases} \Rightarrow lim_{x \to 0} \dfrac{sin(x)}{x} = 1\\]

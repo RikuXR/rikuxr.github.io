@@ -1,0 +1,30 @@
+I"�<p>A curve is continuous if it has no “holes”, “breaks” or asymptotes.</p>
+
+<p>Function is continuous at a point “c” if:</p>
+<ol>
+  <li>$f(c)$ is defined</li>
+  <li>$lim_{x \to c} f(x)$ must exist</li>
+  <li>$lim_{x \to c} f(x) = f(c)$</li>
+</ol>
+
+<p><img src="/assets/img/3.1.jpg#inline3" alt="" />
+<img src="/assets/img/3.2.jpg#inline3" alt="" />
+<img src="/assets/img/3.3.jpg#inline3" alt="" /></p>
+
+<p>If function is continuous at every point betwen $a$ &amp; $b$, the function is cont. on $(a,b).</p>
+
+<p>But what about endpoints?
+<img src="/assets/img/3.4.jpg" alt="" /> {: class=”mr”}
+Cont. on $(a, b]$</p>
+
+<p>In general:</p>
+<ul>
+  <li>Cont. from the left at point C
+ $lim_{x \to c^-} f(x) = f(c)$</li>
+  <li>Cont. from the right at point c
+ $lim_{x \to c^+} f(x) = f(c)$</li>
+</ul>
+
+<h3 id="example">Example</h3>
+<p>Prove $f(x) = sqrt(16 - x^2)$ is continuous on $[-4, 4]$</p>
+:ET

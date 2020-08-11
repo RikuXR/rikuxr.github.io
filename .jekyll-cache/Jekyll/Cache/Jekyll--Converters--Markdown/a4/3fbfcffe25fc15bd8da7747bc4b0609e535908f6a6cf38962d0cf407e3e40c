@@ -1,0 +1,9 @@
+I"<p>A curve is continuous if it has no “holes”, “breaks” or asymptotes.</p>
+
+<p>Function is continuous at a point “c” if:</p>
+<ol>
+  <li>$f(c)$ is defined</li>
+  <li>$lim_{x \to c} f(x)$ must exist</li>
+  <li>$lim_{x \to c} f(x) = f(c)$</li>
+</ol>
+:ET

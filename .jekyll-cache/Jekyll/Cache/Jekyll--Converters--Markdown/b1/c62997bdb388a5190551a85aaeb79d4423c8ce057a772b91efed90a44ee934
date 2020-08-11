@@ -1,0 +1,97 @@
+I"*<h2 id="basics">Basics:</h2>
+
+<ol>
+  <li>$lim_{x \to a} C = C$ (c = constant)</li>
+  <li>$lim_{x \to a} x = a$</li>
+  <li>$lim_{x \to 0^-} \frac{1}{x} = -\infty \quad\ lim_{x \to 0^+} \frac {1}{x} = +\infty$</li>
+</ol>
+
+<p class="image-center"><img src="/assets/img/2.1.jpg#inline3" alt="" />
+<img src="/assets/img/2.2.jpg#inline3" alt="" /></p>
+
+<h2 id="properties">Properties:</h2>
+<p>$lim_{x \to a} f(x) = L_1 \quad lim_{x \to a} g(x) = L_2$</p>
+
+<ol>
+  <li>$lim_{x \to a} [f(x) \pm g(x)] = lim_{x \to a} f(x) \pm lim_{x \to a} g(x)$</li>
+  <li>$lim_{x \to a} [f(x) * g(x)] = lim_{x \to a} f(x) * lim_{x \to a} g(x)$</li>
+  <li>$lim_{x \to a} [\frac{f(x)}{g(x)}] = \frac{lim_{x \to a} f(x)}{lim_{x \to a} g(x)}$</li>
+  <li>$lim_{x \to a} [f(x)]^n = [lim_{x \to a} f(x)]^n \longrightarrow  lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{lim_{x \to a} f(x)}$</li>
+</ol>
+
+<h3 id="example">Example</h3>
+<p>$lim_{x \to 2} (x^3-2x+7) = \lim_{x \to 2} x^3 - lim_{x \to 2} 2x + lim_{x \to 2} 7 = 2^3 - 2*2 + 7 = 11$ <br />
+$f(2) = 11 \longleftarrow$ works for any polynomial</p>
+
+<p>* $lim_{x \to a} P(x) = P(a)$ To find the limit of a polynomial, just plug-in the value</p>
+
+<h3 id="example-1">Example</h3>
+<p>$lim_{x \to 2} \frac{4x^2 + 1}{x-3} = \frac{4*2^2 + 1}{2-3} = -17$</p>
+
+<h3 id="example-2">Example</h3>
+<p><img src="/assets/img/2.3.jpg" alt="" class="mr" />
+$lim_{x \to 5} \frac{x^2-3x-10}{x^2-10x+25} = lim_{x \to 5} \frac{(x-5)(x+2)}{(x-5)(x-5)} = lim_{x \to 5} \frac{x+2}{x-5} = D.N.E.$</p>
+
+<p>Note:</p>
+<ol>
+  <li>If $\frac{0}{0}$, factor &amp; simplilfy</li>
+  <li>If you can’t cancel the “Problem”, check with “Sign Analysis” because limit might not exist</li>
+</ol>
+
+<h3 id="example-3">Example</h3>
+<p>$lim_{x \to 1} \frac{x-1}{\sqrt{x} - 1} * \frac{\sqrt{x} + 1}{\sqrt{x} + 1} = lim_{x \to 1} \frac{(x-1)(\sqrt{x} + 1)}{x-1} = lim_{x \to 1}(\sqrt{x} + 1) = \ \sqrt{1} + 1 = 2$</p>
+
+<p class="clearfix"></p>
+
+<h2 id="piece-wise-limits">Piece-wise limits</h2>
+<p>Find 1-sided limits and see if they’re equal</p>
+
+<p><img src="/assets/img/2.4.jpg" alt="" class="mr" /></p>
+<h3 id="example-4">Example</h3>
+<p>$f(x) = \begin{cases} 
+\dfrac{1}{x+2}, \quad x &lt; -2 \cr[1em]
+x^2-5,         \quad -2 &lt; x \leq 3 \cr[0.5em]
+\sqrt{x+13},   \quad x &gt; 3
+\end{cases}
+$</p>
+
+<p>$lim_{x \to -2^-} \frac{1}{x+2} = -\infty \quad\quad\quad lim_{x \to 3^-} (x^2-5) = 4$</p>
+
+<p>$lim_{x \to -2^+} (x^2-5) = -1 \quad\quad lim_{x \to 3^+} \sqrt{x+13} = 4$</p>
+
+<p>$lim_{x \to -2} f(x)=D.N.E \quad\quad lim_{x \to 3} x^2-5 = 4$</p>
+
+<p class="clearfix"></p>
+
+<h2 id="limits-of-trig-functions">Limits of trig. functions</h2>
+<p>* $sin(x)$ &amp; $cos(x)$ are continuous everywhere</p>
+
+<p>$lim_{x \to a} sin(x) = sin(a) \quad\quad lim_{x \to a} cos(x) = cos(a)$</p>
+
+<h3 id="what-about-tanx">What about $tan(x)$?</h3>
+
+<p>$lim_{x \to a} tan(x) = lim_{x \to a} \frac{sin(x)}{cos(x)} = \frac{lim_{x \to a} sin(x)}{lim_{x \to a} cos(x)} = \frac{sin(a)}{cos(a)} = tan(a), \quad cos(a) \neq 0 \rightarrow x \neq \pm\frac{\pi}{2} + \pi n$</p>
+
+<h3 id="example-5">Example</h3>
+<p>$lim_{x \to 1} cos(\frac{x^2-1}{x-1}) = cos[lim_{x \to 1} \frac{x^2-1}{x-1}] = 
+cos[lim_{x \to 1} (x+1)] = cos(2)$</p>
+
+<h3 id="example-6">Example</h3>
+<p>$lim_{x \to \frac{\pi}{2}} [3x^2 + cos(x)] = 3(\frac{\pi}{2})^2 + cos(\frac{\pi}{2}) = \frac{3\pi^2}{4}$</p>
+
+<h3 id="example-7">Example</h3>
+<p><img src="/assets/img/2.5.jpg" alt="" class="mr" />
+$lim_{x \to 0} [\frac{sin(x)}{x}]$</p>
+
+<p>AREAS:</p>
+
+<p>$\begin{rcases}
+   &amp;\text{Big} \triangle = \dfrac{1 * tan(x)}{2} \cr[1em]
+   &amp;\text{Sector}  = \dfrac{1 * x}{2} \cr[1em]
+   &amp;\text{Small} \triangle = \dfrac{1 * sin(x)}{2}
+\end{rcases} \rightarrow \dfrac{sin(x)}{2} &lt; \dfrac{x}{2} &lt; \dfrac{tan(x)}{2} \newline
+\Rightarrow \dfrac{sin(x)}{sin(x)} &lt; \dfrac{x}{sin(x)} &lt; \dfrac{tan(x)}{sin(x)}$
+$$</p>
+
+<p class="clearfix"></p>
+:ET

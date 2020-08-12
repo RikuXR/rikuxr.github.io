@@ -1,6 +1,7 @@
 ---
 title: 1.4 Continuity of Functions
 layout: post
+categories: [Limits and Continuity]
 ---
 
 A curve is continuous if it has no "holes", "breaks" or asymptotes.

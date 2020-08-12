@@ -1,6 +1,7 @@
 ---
 title: 2.1 The Derivative
 layout: post
+categories: Derivatives
 ---
 
 $\underbrace{

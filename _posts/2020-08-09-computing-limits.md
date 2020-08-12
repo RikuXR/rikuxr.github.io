@@ -1,6 +1,7 @@
 ---
 title: 1.2 Computing Limits
 layout: post
+categories: [Limits and Continuity]
 ---
 
 ## Basics:

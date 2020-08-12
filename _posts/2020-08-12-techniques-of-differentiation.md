@@ -1,6 +1,7 @@
 ---
 title: 2.2 Techniques of differentiation
 layout: post
+categories: Derivatives
 ---
 
 ## Slope of a constant

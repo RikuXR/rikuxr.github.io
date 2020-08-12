@@ -38,18 +38,18 @@ At what points does $y = x^3 - 3x + 4$ have horizontal tangent lines?
 
 $\dfrac{\partial y}{\partial x} = 3x^2 - 3$ (slope)
 
-\\[3x^2 - 3 = 0 \newline
-3(x^2 - 1) = 0 \newline
-3(x+1)(x-1) = 0 \newline
-x = -1 \qquad x = 1\\]
+\\[3x^2 - 3 = 0 \\]
+\\[3(x^2 - 1) = 0 \\]
+\\[3(x+1)(x-1) = 0 \\]
+\\[x = -1 \qquad x = 1 \\]
 
 ## Higher derivatives
 
 
 |             $1^{st}$             |              $2^{nd}$              |              $3^{rd}$              |
 |:--------------------------------:|:----------------------------------:|:----------------------------------:|
-|              $f'(x)$             |              $f''(x)$              |              $f'''(x)$             |
-|               $y'$               |                $y''$               |               $y'''$               |
+|              $f\rq(x)$             |              $f\rq\rq(x)$              |              $f\rq\rq\rq(x)$             |
+|               $y\rq$               |                $y\rq\rq$               |               $y\rq\rq\rq$               |
 | $\quad\dfrac{\partial y}{\partial x}\quad$ | $\quad\dfrac{\partial^2 y}{\partial x}\quad$ | $\quad\dfrac{\partial^3 y}{\partial x}\quad$ |
 
 ### Example

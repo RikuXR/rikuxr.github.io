@@ -81,3 +81,15 @@ th, td {
   min-width: 50px;
   padding: 5px
 }
+
+.wrapper {
+  padding: 0 50px;
+}
+
+.posts-list {
+  list-style-type: none;
+}
+
+.posts-list__item + li {
+  margin-top: 10px;
+}

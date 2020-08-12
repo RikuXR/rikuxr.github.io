@@ -2,10 +2,24 @@
 layout: default
 ---
 
-<ul class="myposts">
-  {% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title}}</a>
-    <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-  </li>
+<div class="wrapper">
+  <h1>Calculus 1</h1>
+
+  {% for category in site.categories %}
+  <div class="posts-category">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+
+    <h2 class="category-head">{{forloop.index}}. {{ category_name }}</h3>
+
+      <ul class="posts-list">
+        {% assign posts_by_title = site.categories[category_name] | sort: "title" %}
+        {% for post in  posts_by_title%}
+        <li class="posts-list__item">
+          <a class="posts-list__link" href="{{ post.url }}">{{ post.title}}</a>
+          <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+  </div>
   {% endfor %}
-</ul>
+</div>

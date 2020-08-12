@@ -1,5 +1,5 @@
 ---
-title: Continuity
+title: 1.4 Continuity of Functions
 layout: post
 ---
 

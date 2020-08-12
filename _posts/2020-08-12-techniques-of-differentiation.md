@@ -1,5 +1,5 @@
 ---
-title: Techniques of differentiation
+title: 2.2 Techniques of differentiation
 layout: post
 ---
 

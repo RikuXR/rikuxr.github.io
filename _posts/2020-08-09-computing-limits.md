@@ -1,5 +1,5 @@
 ---
-title: Computing Limits
+title: 1.2 Computing Limits
 layout: post
 ---
 
